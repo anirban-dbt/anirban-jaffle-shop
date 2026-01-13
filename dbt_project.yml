@@ -12,7 +12,7 @@ profile: default # Put your profile here
 model-paths: ["models"]
 analysis-paths: ["analyses"]
 test-paths: ["data-tests"]
-seed-paths: ["seeds"]
+seed-paths: ["seeds","jaffle-data"]
 macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
 
@@ -28,7 +28,7 @@ seeds:
   jaffle_shop:
     +schema: raw
     jaffle-data:
-      +enabled: "{{ var('load_source_data', false) }}"
+      +enabled: "{{ var('load_source_data', true) }}"
 
 models:
   jaffle_shop:
