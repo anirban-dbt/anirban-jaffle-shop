@@ -3,7 +3,6 @@ with
 source as (
 
     select * from {{ source('ecom', 'raw_customers') }}
-    -- testing commit
 
 ),
 
