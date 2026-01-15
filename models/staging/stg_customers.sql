@@ -18,6 +18,8 @@ renamed as (
         ---------- text
         name as customer_name
 
+        ---------- ci job test comment
+
     from source
 
 )
